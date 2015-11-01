@@ -1,0 +1,19 @@
+{{#foreach posts}}
+    <div class="post-preview">
+    
+        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <div class="post-date">
+            {{date published_at format="DD, MMM"}}
+            <div class="year">{{date published_at format="YYYY"}}</div>
+        </div>
+
+        <div class="post-excerpt">{{excerpt}}</div>
+
+        <div class="post-meta"><span class="icon icomoon-user"></span>{{author}} {{tags prefix="<span class=\"icon icomoon-tag\"></span>"}}</div>
+        
+        <!--<div class="post-meta">{{date published_at timeago="true"}} by {{author}}</div>-->
+    
+    </div>
+{{/foreach}}
+
+    {{pagination}}

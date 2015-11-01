@@ -58,7 +58,7 @@
     #content {
         position: relative;
         margin: 0 auto;
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
     .pagination {
@@ -84,6 +84,9 @@
     }
 
     #header a {
+        font-size: 45px;
+        font-weight: 700;
+        color: #000;
         text-decoration: none;
     }
 
@@ -145,20 +148,20 @@
 
     .post-preview {
         position: relative;
-        padding: 0 0 35px 0;
+        padding: 0 0 35px 100px;
         margin-bottom: 25px;
         border-bottom: solid 1px #e8e8e8;
     }
 
     .post-preview .post-title,
     .post-preview .post-title a {
-        font: 42px "Open sans", helvetica, arial, sans-serif;
+        font: 35px "Open sans", helvetica, arial, sans-serif;
         color: #333;
         font-weight: 700;
         letter-spacing: -1px;
         margin: 0;
         padding: 0;
-        line-height: 50px;
+        line-height: 45px;
     }
 
     .post-preview .post-title {
@@ -168,25 +171,58 @@
     .post-preview .post-title a {
         margin: 0;
         text-decoration: none;
-        margin-left: -1px;
+    }
+
+    .post-preview .post-excerpt {
+        padding: 5px 0 0 0;
     }
 
     .post-preview .post-meta {
         position: relative;
         padding: 10px 0 10px 0;
         color: #777;
-        font-size: 16px;
+        font-size: 14px;
+        font-family: "Open sans", helvetica, arial, sans-serif;
     }
 
         .post-preview .post-meta a {
-            color: #222;
             text-decoration: none;
         }
 
         .post-preview .post-meta a:hover {
-            color: #00;
+            color: #000;
             text-decoration: underline;
         }
+
+        .post-preview .post-meta .icon {
+            margin-right: 5px;
+            color: #999;
+        }
+
+        .post-preview .post-meta .icomoon-tag {
+            margin-right: 5px;
+            margin-left: 20px;
+        }
+
+    .post-preview .post-date {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        font-family: "Open sans", helvetica, arial, sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: -1px;
+        color: #333;
+        text-transform: uppercase;
+    }
+
+    .post-preview .post-date .year {
+        font-size: 16px;
+        font-weight: 700;
+        color: #999;
+        text-align: right;
+    }
 
 
 /*
@@ -226,24 +262,26 @@
 
     .post-container .post-meta {
         position: relative;
-        padding: 10px 0 20px 0;
+        padding: 20px 0 20px 0;
         font-size: 16px;
         color: #777;
     }
 
-        .post-container .post-meta a {
-            color: #222;
-            text-decoration: none;
+        .post-container .post-meta .icon {
+            margin-right: 5px;
+            color: #999;
         }
 
-        .post-container .post-meta a:hover {
-            color: #000;
-            text-decoration: underline;
+        .post-container .post-meta .icomoon-tag {
+            margin-right: 5px;
+            margin-left: 15px;
         }
-    
+
     .post-container .post-body {
         padding: 0 0 40px 0;
         line-height: 30px;
+        border-top: solid 1px #e8e8e8;
+        margin-top: 10px;
     }
 
         .post-container .post-body a {
@@ -287,6 +325,36 @@
 
 
 /*
+ * ALTERNATIVE LIST PAGE (e.g. author posts, tag posts etc..)
+ * --------------------------------------
+ */
+
+    .alt-list-header {
+        position: relative;
+        height: 65px;
+    }
+
+        .alt-list-header h1 {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            right: 100px;
+            font: 25px "Open sans", helvetica, arial, sans-serif;
+            color: #444;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            letter-spacing: -1px;
+        }
+
+        .alt-list-header h1 a,
+        .alt-list-header h1 .name {
+            color: #888;
+            font-weight: 400;
+        }
+
+/*
  * FOOTER
  * --------------------------------------
  */
@@ -317,18 +385,24 @@
     }
 
 
-@media (max-width: 580px) {
+/*
+ * MEDIA QUERIES
+ * --------------------------------------
+ */
 
-    .post-container .post-body ul {
-        margin: 25px 0;
+    @media (max-width: 580px) {
+
+        .post-container .post-body ul {
+            margin: 25px 0;
+        }
+
     }
 
-}
+    @media (max-width: 440px) {
 
-@media (max-width: 440px) {
+        .post-container .post-body ul {
+            margin: 25px -10px;
+        }
 
-    .post-container .post-body ul {
-        margin: 25px -10px;
     }
 
-}
