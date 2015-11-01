@@ -1,0 +1,334 @@
+/*
+ * INIT
+ * --------------------------------------
+ */
+
+    @-ms-viewport {
+        width: device-width;
+    }
+
+    * { 
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+    }
+
+    html {
+         overflow: -moz-scrollbars-vertical;
+         overflow-y: scroll;    
+    }
+
+    a {
+        color: #4183D7;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        font: 18px "Noto Serif", Georgia, serif;
+        color: #555;
+    }
+
+    img {
+        max-width: 100%;
+        border: 0;
+    }
+
+/*
+ * LAYOUT
+ * --------------------------------------
+ */
+
+    .inner {
+        position: relative;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 800px;
+    }
+
+    #header {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    #content {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .pagination {
+        position: relative;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    #footer {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+
+/*
+ * HEADER
+ * --------------------------------------
+ */
+
+    #header .inner {
+        padding: 50px 0;
+        border-bottom: solid 1px #e8e8e8;
+    }
+
+    #header a {
+        text-decoration: none;
+    }
+
+    .blog-logo {
+        width: auto;
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
+
+
+/*
+ * POSTS PREVIEW
+ * --------------------------------------
+ */
+
+    #nav-main {
+        padding: 3px 20px 0 20px;
+        text-align: center;
+    }
+
+        #nav-main .inner {
+            padding: 0;
+            border-bottom: solid 1px #e8e8e8;
+        }
+
+        #nav-main ul {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        #nav-main ul li {
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+
+        #nav-main ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 0 10px;
+            line-height: 30px;
+        }
+
+        #nav-main ul li a:hover {
+            text-decoration: none;
+        }
+
+        #nav-main ul li.nav-current a {
+            color: #000;
+        }
+
+
+/*
+ * POSTS PREVIEW
+ * --------------------------------------
+ */
+
+    .post-preview {
+        position: relative;
+        padding: 0 0 35px 0;
+        margin-bottom: 25px;
+        border-bottom: solid 1px #e8e8e8;
+    }
+
+    .post-preview .post-title,
+    .post-preview .post-title a {
+        font: 42px "Open sans", helvetica, arial, sans-serif;
+        color: #333;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+    }
+
+    .post-preview .post-title {
+        position: relative;
+    }
+
+    .post-preview .post-title a {
+        margin: 0;
+        text-decoration: none;
+        margin-left: -1px;
+    }
+
+    .post-preview .post-meta {
+        position: relative;
+        padding: 10px 0 10px 0;
+        color: #777;
+        font-size: 16px;
+    }
+
+        .post-preview .post-meta a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .post-preview .post-meta a:hover {
+            color: #00;
+            text-decoration: underline;
+        }
+
+
+/*
+ * PAGINATION
+ * --------------------------------------
+ */
+
+    .pagination .newer-posts {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .pagination .older-posts {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+
+/*
+ * POST
+ * --------------------------------------
+ */
+
+    .post-container {
+        position: relative;
+    }
+
+    .post-container .post-title {
+        font: 46px "Open sans", helvetica, arial, sans-serif;
+        color: #333;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+    }
+
+    .post-container .post-meta {
+        position: relative;
+        padding: 10px 0 20px 0;
+        font-size: 16px;
+        color: #777;
+    }
+
+        .post-container .post-meta a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .post-container .post-meta a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+    
+    .post-container .post-body {
+        padding: 0 0 40px 0;
+        line-height: 30px;
+    }
+
+        .post-container .post-body a {
+            text-decoration: underline;
+        }
+
+        .post-container .post-body ul {
+            margin: 25px;
+        }
+
+            .post-container .post-body ul li {
+                margin-bottom: 24px;
+            }
+
+    .post-container .social {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 40px;
+        border-top: solid 1px #e8e8e8;
+        border-bottom: solid 1px #e8e8e8;
+    }
+
+        .post-container .social .title {
+            font: 13px "Open Sans", helvetica, arial, sans-serif;
+            color: #888;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-bottom: 2px;
+        }
+
+        .post-container .social a {
+            display: inline-block;
+            color: #444;
+            font-size: 26px;
+            margin: 0 5px;
+        }
+
+        .post-container .social a:hover {
+            color: #4183D7;
+        }
+
+
+/*
+ * FOOTER
+ * --------------------------------------
+ */
+
+    #footer .subscribe a {
+        text-decoration: none;
+    }
+
+        #footer .subscribe a .icon {
+            display: inline-block;
+            color: #D35400;
+            margin-right: 10px;
+        }
+
+        #footer .subscribe a:hover {
+            text-decoration: underline;
+            color: #222;
+        }
+
+        #footer .subscribe a:hover .icon {
+            text-decoration: none;
+            color: #222;
+        }
+
+    #footer .copy {
+        padding: 20px 0 0 0;
+        font-size: 16px;
+    }
+
+
+@media (max-width: 580px) {
+
+    .post-container .post-body ul {
+        margin: 25px 0;
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .post-container .post-body ul {
+        margin: 25px -10px;
+    }
+
+}

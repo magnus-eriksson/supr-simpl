@@ -1,0 +1,66 @@
+{{!< default}}
+
+{{#post}}
+
+    <article class="post-container post">
+
+
+        <h1 class="post-title">{{title}}</h1>
+
+
+        <div class="post-meta">{{date published_at timeago="true"}} by {{author}}</div>
+
+
+        <div class="post-body">
+
+            {{#if image }}
+                <p><img src="{{image}}" class="featured" /></p>
+            {{/if}}
+
+            {{content}}
+        </div>
+
+        
+        <div class="social">
+
+            <div class="title">Share the love</div>
+
+            <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="icon icomoon-twitter"></span>
+            </a>
+        
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+               onclick="window.open(this.href, 'facebook-share', 'width=580,height=296');return false;">
+                <span class="icon icomoon-facebook"></span>
+            </a>
+        
+            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <span class="icon icomoon-google-plus"></span>
+            </a>
+            
+        </div>
+
+
+        <div class="comments">
+
+            <div id="disqus_thread"></div>
+
+            <script>
+                if (SuprSimpl.disqusShortname) {
+                    var disqus_identifier = '{{post.id}}';
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + SuprSimpl.disqusShortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                }
+            </script>
+
+        </div>
+
+
+    </article>
+
+{{/post}}

@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{#post}}
+
+    <article class="post-container page">
+
+        <h1 class="post-title">{{{title}}}</h1>
+
+        <div class="post-body">    
+            {{content}}
+        </div>
+
+        <div class="social">
+
+            <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="icon icomoon-twitter"></span>
+            </a>
+        
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+               onclick="window.open(this.href, 'facebook-share', 'width=580,height=296');return false;">
+                <span class="icon icomoon-facebook"></span>
+            </a>
+        
+            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <span class="icon icomoon-google-plus"></span>
+            </a>
+            
+        </div>
+
+
+    </article>
+
+{{/post}}

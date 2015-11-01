@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta name="description" content="{{meta_description}}"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>{{meta_title}}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{asset "css/fonts.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+    
+    <script>
+        if (!SuprSimpl) var SuprSimpl = {};
+
+        // You should not edit these settings here. You should override 
+        // them in Ghost "Code Injection" / Blog header
+        SuprSimpl.disqusShortname = ""; // To disable disqus, leave this empty;
+        SuprSimpl.googleAnalytics = ""; // Ex. "UA-XXXXXXXX-1". To disable GA, leave this empty;
+    </script>
+
+    {{ghost_head}}
+
+    {{! Since this theme doesn't show the cover image on any page, we need to add it as og:image }}
+    {{#post}}
+        {{^if image}}
+            <meta property="og:image" content="{{@blog.url}}{{@blog.cover}}" />
+        {{/if}}
+    {{/post}}
+
+</head>
+<body class="{{body_class}}">
+
+    
+    <header id="header">
+        <div class="inner">
+
+            <a href="{{@blog.url}}">
+                {{#if @blog.logo}}
+                    <img src="{{@blog.logo}}" class="blog-logo" alt="{{@blog.title}}" />
+                {{else}}
+                    {{@blog.title}}
+                {{/if}}
+            </a>
+            <br />
+            {{@blog.description}}
+        
+        </div>
+    </header>
+
+
+    {{#if @blog.navigation}}
+    <nav id="nav-main">
+        <div class="inner">
+
+            {{navigation}}
+
+        </div>
+    </nav>
+    {{/if}}
+
+    
+    <section id="content">
+        <div class="inner">
+
+            {{{body}}}
+    
+        </div>
+    </section>
+
+    
+    <footer id="footer">
+        <div class="inner">
+            
+            <div class="subscribe">
+                <a href="{{@blog.url}}/rss/"><span class="icon icomoon-rss"></span>Subscribe</a>
+            </div>
+            
+            <div class="copy">
+                &copy; 2015 {{@blog.title}} - All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    
+    {{ghost_foot}}
+
+
+    <script>
+        if (SuprSimpl.googleAnalytics) {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', SuprSimpl.googleAnalytics, 'auto');
+            ga('send', 'pageview');
+        }
+    </script>
+
+</body>
+</html>
