@@ -23,6 +23,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icomoon-menu:before {
+    content: "\f141";
+}
 .icomoon-tag:before {
     content: "\e900";
 }

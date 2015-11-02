@@ -54,12 +54,17 @@
             {{@blog.description}}
         
         </div>
+
     </header>
 
 
     {{#if @blog.navigation}}
     <nav id="nav-main">
         <div class="inner">
+
+            <div id="toggle-nav-container">
+                <a href="javascript:;" class="icomoon-menu" id="toggle-nav"></a>
+            </div>
 
             {{navigation}}
 
@@ -106,6 +111,8 @@
             ga('send', 'pageview');
         }
     </script>
+
+    <script src="{{asset "js/main.js"}}"></script>
 
 </body>
 </html>
