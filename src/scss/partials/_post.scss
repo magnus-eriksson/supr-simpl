@@ -1,0 +1,82 @@
+/*
+ * POST
+ * --------------------------------------
+ */
+
+    .post-container {
+        position: relative;
+    
+        .post-title {
+            font: 46px "Open sans", helvetica, arial, sans-serif;
+            color: #333;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+            padding: 0;
+            line-height: 50px;
+        }
+
+        .post-meta {
+            position: relative;
+            padding: 20px 0 20px 0;
+            font-size: 16px;
+            color: #777;
+
+            .icon {
+                margin-right: 5px;
+                color: #999;
+            }
+
+            .icomoon-tag {
+                margin-right: 5px;
+                margin-left: 15px;
+            }
+        }
+
+        .post-body {
+            padding: 0 0 40px 0;
+            line-height: 30px;
+            border-top: solid 1px #e8e8e8;
+            margin-top: 10px;
+
+            a {
+                text-decoration: underline;
+            }
+
+            ul {
+                margin: 25px;
+
+                li {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        .social {
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-top: solid 1px #e8e8e8;
+            border-bottom: solid 1px #e8e8e8;
+
+            .title {
+                font: 13px "Open Sans", helvetica, arial, sans-serif;
+                color: #888;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding-bottom: 2px;
+            }
+
+            a {
+                display: inline-block;
+                color: #444;
+                font-size: 26px;
+                margin: 0 5px;
+            }
+
+            a:hover {
+                color: #4183D7;
+            }
+        }
+
+    }

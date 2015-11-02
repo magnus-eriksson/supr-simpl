@@ -1,0 +1,49 @@
+
+    #toggle-nav-container {
+        display: none;
+
+        a {
+            color: #222;
+            font-size: 30px;
+            text-decoration: none;
+        }
+    }
+
+    #nav-main {
+        padding: 3px 20px 0 20px;
+        text-align: center;
+
+        .inner {
+            padding: 0;
+            border-bottom: solid 1px #e8e8e8;
+        }
+
+        ul {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                margin: 0;
+                padding: 0;
+                float: left;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0 10px;
+                    line-height: 30px;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                }
+
+                &.nav-current a {
+                    color: #000;
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,138 @@
+/*
+ * MEDIA QUERIES
+ * --------------------------------------
+ */
+
+    @media (max-width: 700px) {
+
+        /* MENU */
+        #nav-main ul li {
+            font-size: 14px;
+        }
+
+    }
+
+    @media (max-width: 640px) {
+
+        #nav-main,
+        #nav-main .inner {
+            padding: 0 20px;
+            height: auto;
+        }
+
+        #toggle-nav-container {
+            display: block;
+            padding-top: 5px;
+        }
+
+        #nav-main ul {
+            display: none;
+        }
+
+        #nav-main ul li {
+            margin: 8px 0;
+            padding: 0;
+            float: none;
+            font-size: 18px;
+        }
+
+    }
+
+
+    @media (max-width: 600px) {
+
+        /* POST CONTENT */
+        .post-container .post-meta .sep {
+            display: block;
+        }
+
+        .post-container .post-meta .icomoon-tag {
+            margin-left: 0;
+        }
+
+    }
+
+    @media (max-width: 580px) {
+
+        .post-container .post-body ul {
+            margin: 25px 0;
+        }
+
+    }
+
+    @media (max-width: 550px) {
+
+
+    
+        /* POST PREVIEW */
+        .post-preview {
+            padding: 0 0 35px 0;
+        }
+
+        .post-preview .post-title,
+        .post-preview .post-title a {
+            font-size: 30px;
+            line-height: 40px;
+            padding-top: 20px;
+        }
+
+            .post-preview .post-meta .sep {
+                display: block;
+            }
+
+            .post-preview .post-meta .icomoon-tag {
+                margin-left: 0;
+            }
+
+        .post-preview .post-date {
+            position: absolute;
+            top: 0;
+            font-size: 16px;
+        }
+
+        .post-preview .post-date .year {
+            display: inline-block;
+            text-align: left;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+    }
+
+    @media (max-width: 440px) {
+
+        #header .inner {
+            padding: 20px 0;
+            border-bottom: solid 1px #e8e8e8;
+            font-size: 16px;
+        }
+
+        #header a {
+            font-size: 25px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .blog-logo {
+            width: auto;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .post-container .post-title {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .post-container .post-body {
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        .post-container .post-body ul {
+            margin: 25px -10px;
+        }
+
+    }
+

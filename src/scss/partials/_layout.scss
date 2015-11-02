@@ -1,0 +1,142 @@
+/*
+ * INIT
+ * --------------------------------------
+ */
+
+    @-ms-viewport {
+        width: device-width;
+    }
+
+    * { 
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+    }
+
+    html {
+         overflow: -moz-scrollbars-vertical;
+         overflow-y: scroll;    
+    }
+
+    a {
+        color: #4183D7;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        font: 18px "Noto Serif", Georgia, serif;
+        color: #555;
+    }
+
+    img {
+        max-width: 100%;
+        border: 0;
+    }
+
+/*
+ * LAYOUT
+ * --------------------------------------
+ */
+
+    .inner {
+        position: relative;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 800px;
+    }
+
+    #header {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    #content {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .pagination {
+        position: relative;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    #footer {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+
+/*
+ * PAGE
+ * --------------------------------------
+ */
+
+    .page-template .post-container .post-body {
+        border-top: 0;
+    }
+
+
+/*
+ * ALTERNATIVE LIST PAGE (e.g. author posts, tag posts etc..)
+ * --------------------------------------
+ */
+
+    .alt-list-header {
+        position: relative;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+
+        .alt-list-header h1 {
+            font: 25px "Open sans", helvetica, arial, sans-serif;
+            color: #444;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            letter-spacing: -1px;
+        }
+
+        .alt-list-header h1 a,
+        .alt-list-header h1 .name {
+            color: #888;
+            font-weight: 400;
+        }
+
+/*
+ * FOOTER
+ * --------------------------------------
+ */
+
+    #footer .subscribe a {
+        text-decoration: none;
+    }
+
+        #footer .subscribe a .icon {
+            display: inline-block;
+            color: #D35400;
+            margin-right: 10px;
+        }
+
+        #footer .subscribe a:hover {
+            text-decoration: underline;
+            color: #222;
+        }
+
+        #footer .subscribe a:hover .icon {
+            text-decoration: none;
+            color: #222;
+        }
+
+    #footer .copy {
+        padding: 20px 0 0 0;
+        font-size: 16px;
+    }
+
+
